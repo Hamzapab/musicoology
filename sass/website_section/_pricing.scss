@@ -1,0 +1,77 @@
+/* strat Pricing*/
+.pricing{
+  padding: 100px 0;
+  background: url(/images/pricing-bg.png);
+  .price-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 40px;
+    @media only screen and (max-width:686px) and (min-width:501px) {
+      &{
+        padding: 0 100px;
+      }
+    }
+    >div{
+      background-color: #ff6300;
+      text-align: center;
+      padding: 40px 20px 10px;
+      &:hover img{
+        transform: scale(1.2);
+      }
+      img{
+        transition: .4s;
+      }
+      h3{
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 20px 0;
+      }
+      p{
+        padding: 10px;
+      }
+      button{
+        background-color: #282828;
+        width: 100%;
+        padding: 5px;
+        margin: 20px 0;
+        z-index: 6;
+        font-size: 22px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+	      overflow: hidden;
+	      border: solid 4px #282828;
+	      outline: 0;
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 50%;
+          height: 300px;
+          width: 0px;
+          transform: translate(-50%, -50%) rotate(45deg);
+          -ms-transform: translate(-50%, -50%) rotate(45deg);
+          -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          background-color: #ff6300;
+          opacity: 0;
+          }
+        
+        &,
+        &::before {
+          transition: all ease 400ms;
+            -webkit-transition: all ease 400ms;
+          }
+        &:hover {
+          background-color: transparent;
+          }
+        &:hover::before {
+          width: 300px;
+          opacity: 1;
+          }
+      }
+    }
+  }
+}
+/* End Pricing*/

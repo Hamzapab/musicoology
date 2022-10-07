@@ -1,0 +1,66 @@
+/* Start Compenents */
+.title{
+  font-size: 32px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  width: fit-content;
+  padding: 10px 30px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 50px;
+  transition:.4s;
+}
+.title::before,
+.title::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color:  #282828;;
+  top: 50%;
+  transform: translateY(-50%);
+  transition:.4s;
+}
+/* title for pricing section */
+.pricing .title::after,
+.pricing .title::before{
+  background-color: #ff6300;
+}
+.title::before{
+  right:-30px;
+}
+.title::after{
+  left:-30px;
+}
+.title:hover{
+  color: white;
+  border: 2px solid #ff6300;
+  z-index: 2;
+}
+/* title for pricing section */
+.pricing .title:hover{
+  border: 2px solid #282828;
+}
+.title:hover::after{
+  left: 0;
+  border-radius: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+.title:hover::before{
+  right: 0;
+  border-radius: 0;
+  width: 52%;
+  height: 100%;
+  z-index: -1;
+}
+.title + p{
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+/* End Compenents */

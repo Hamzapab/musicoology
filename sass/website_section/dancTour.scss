@@ -1,0 +1,39 @@
+/* Start Dance Tour*/
+.danc-tour{
+  padding: 100px 0;
+  overflow: hidden;
+  background:url(/images/danc-tour-bg.png),#ff6300;
+  background-repeat: no-repeat;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 40px;
+  @media only screen and (max-width:686px) and (min-width:501px) {
+    &{
+      padding: 0 100px;
+    }
+  }
+}
+.cards > div{
+  background-color: #282828;
+}
+.cards > div:hover img{
+  transform: scale(1.2) rotate(5deg);
+}
+.cards .image{
+  overflow: hidden;
+}
+.cards img{
+  width: 100%;
+  transition: .4s;
+}
+.cards .content{
+  text-align: center;
+  padding: 20px;
+}
+.cards h3{
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,18 @@
+// file of general set 
+@use "./generalSetting/generalSetting";
+// components file
+@use "./generalSetting/components";
+// variables file
+@use "./variables/variables";
+// library use;
+@use "./my_library/library";
+// file containe header style
+@use "./website_section/header";
+// file containe landing page style
+@use "./website_section/landing";
+// Danc tour style
+@use "./website_section/dancTour.scss";
+// prcinig section 
+@use "./website_section/pricing";
+// statistics section
+@use "./website_section/statistc";

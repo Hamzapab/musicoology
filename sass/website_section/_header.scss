@@ -1,0 +1,56 @@
+/* Start header */
+header{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index: 99999999;
+  top: 0;
+  background: url(/images/header-bg.png),#282828;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo img{
+    width: 70px;
+  }
+  nav{
+    @media (max-width:767px) {
+      & {
+        position: absolute;
+        background-color: rgb(40, 40, 40,70%);
+        width: 0%;
+        height: 100vh;
+        top: 0px;
+        right: 0;
+        overflow: hidden;
+        padding: 70px 0;
+        z-index: 1;
+        transition: width .4s;
+      }
+    }
+    ul{
+      display: flex;
+      padding: 10px;
+      @media (max-width:767px) {
+        & {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+    li{
+      padding: 0 20px;
+      transition: .4s;
+    &:hover{
+      color:#ff6300;
+    }
+    }
+  }
+}
+@media (max-width:767px) {
+  .search-icon{
+    display: none;
+  }
+}
+/* End header */
