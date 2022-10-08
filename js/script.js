@@ -34,7 +34,7 @@ let started = false; // Function Started ? No
 
 
 window.addEventListener("scroll",()=>{
-  if(window.scrollY >= statistics.offsetTop - 200){
+  if(window.scrollY >= statistics.offsetTop - 280){
     if(!started){
       boxDiv.forEach((box)=>{
         startCount(box)
@@ -46,8 +46,8 @@ window.addEventListener("scroll",()=>{
 function startCount(el) {
   let goal = el.dataset.goal;
   let count = setInterval(() => {
-    el.textContent++;
-    if (el.textContent == goal) {
+    el.textContent = +el.textContent + 4;
+    if (+el.textContent == +goal) {
       el.textContent = el.textContent + "+"
       clearInterval(count);
     }

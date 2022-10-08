@@ -11,8 +11,14 @@
 // file containe landing page style
 @use "./website_section/landing";
 // Danc tour style
-@use "./website_section/dancTour.scss";
+@use "./website_section/dancTour";
 // prcinig section 
 @use "./website_section/pricing";
 // statistics section
 @use "./website_section/statistc";
+// video section 
+@use "./website_section/video";
+// subscribe section
+@use "./website_section/subscribe";
+// footer section
+@use "./website_section/footer";

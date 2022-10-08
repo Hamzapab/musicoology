@@ -1,0 +1,37 @@
+/*strat subscribe sections */
+.subscribe{
+	padding: 100px 0;
+	background: url(/images/subscribe-bg.png),#ff6300;
+	@media (max-width:500px) {
+		background: #ff6300;
+	}
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	form{
+		max-width: 550px;
+		display: flex;
+		margin: 0 auto;
+		@media (max-width:500px) {
+			flex-direction: column;
+			text-align: center;
+			gap: 10px;
+		}
+		input:first-child{
+			outline: none;
+			padding: 10px 30px;
+			flex: 1;
+		}
+		input:last-child{
+			background-color: #282828;
+			border: none;
+			color: white;
+			padding: 10px 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			cursor: pointer;
+		}
+	}
+}
+/*End subscribe sections */

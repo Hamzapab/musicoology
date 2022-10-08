@@ -1,0 +1,18 @@
+/*Strat video*/ 
+.video{
+  padding: 300px 0;
+  background:url(/images/video-bg.png);
+  .content{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    p{
+      font-size: 1.8rem;
+    }
+    h2{
+      font-size: 2.2rem;
+      padding: 30px 0;
+    }
+  }
+}
+/*End video*/

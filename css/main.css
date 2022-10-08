@@ -454,6 +454,7 @@ header nav li:hover {
 }
 
 /* End Pricing*/
+/*Strat Startistics*/
 .our-statistique {
   padding: 100px 0;
   background: url(/images/statistics-bg.png), #ff6300;
@@ -500,4 +501,159 @@ header nav li:hover {
   font-size: 1.6rem;
   padding: 5px 0;
 }
+
+/*ENd Startistics*/
+/*Strat video*/
+.video {
+  padding: 300px 0;
+  background: url(/images/video-bg.png);
+}
+.video .content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.video .content p {
+  font-size: 1.8rem;
+}
+.video .content h2 {
+  font-size: 2.2rem;
+  padding: 30px 0;
+}
+
+/*End video*/
+/*strat subscribe sections */
+.subscribe {
+  padding: 100px 0;
+  background: url(/images/subscribe-bg.png), #ff6300;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  .subscribe {
+    background: #ff6300;
+  }
+}
+.subscribe form {
+  max-width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .subscribe form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+.subscribe form input:first-child {
+  outline: none;
+  padding: 10px 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.subscribe form input:last-child {
+  background-color: #282828;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*End subscribe sections */
+/*Start Footer*/
+footer {
+  background-color: #282828;
+  padding: 40px 0;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+footer .container .col-one {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+footer .container .col-one p {
+  font-size: 15px;
+  max-width: 300px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+footer .container .col-one .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+footer .container .col-one .social a {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+footer .container .col-one .social a:hover {
+  background-color: transparent;
+}
+footer .container .col-one .social a:hover i {
+  color: white;
+}
+footer .container .col-one .social i {
+  color: #282828;
+  font-size: 1.3rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+footer .container h3 {
+  padding: 10px 20px;
+  border: 2px solid #ff6300;
+  text-transform: uppercase;
+}
+footer .container li {
+  padding: 10px 0;
+}
+
+/*End Footer*/
 /*# sourceMappingURL=main.css.map */
